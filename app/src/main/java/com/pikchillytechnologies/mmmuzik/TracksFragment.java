@@ -9,12 +9,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-public class TracksFragment extends Fragment{
+public class TracksFragment extends Fragment {
 
     GridView simpleGrid;
     int tracks[] = {R.drawable.img1};
 
-    public TracksFragment(){
+    public TracksFragment() {
         // Required empty public constructor
     }
 

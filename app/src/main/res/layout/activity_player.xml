@@ -4,54 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".PlayerActivity">
 
     <RelativeLayout
         android:id="@+id/layout_Home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         android:background="#FFAB00"
-        >
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageButton
             android:id="@+id/button_Back"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:background="@drawable/backbutton_yellow"
-            android:layout_marginTop="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginStart="4dp"
-            android:layout_marginBottom="4dp"
-            />
+            android:layout_marginTop="4dp"
+            android:background="@drawable/backbutton_yellow" />
 
         <TextView
             android:id="@+id/textView_Title"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="Mmuzik"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:layout_margin="1dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
+            android:layout_margin="1dp"
             android:gravity="center"
-            />
+            android:text="Mmuzik"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
         <ImageButton
             android:id="@+id/button_Home"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/home_brown"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginEnd="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
             android:layout_marginBottom="4dp"
-            />
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/home_brown" />
     </RelativeLayout>
 
     <ImageView
@@ -59,7 +58,45 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_Buttons"
         app:layout_constraintTop_toBottomOf="@id/layout_Home" />
 
+    <LinearLayout
+        android:id="@+id/layout_Buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectedImage">
+
+        <ImageButton
+            android:id="@+id/prev_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/backbutton_red" />
+
+        <ImageButton
+            android:id="@+id/play_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/playbutton_red" />
+
+        <ImageButton
+            android:id="@+id/pause_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pausebutton_red" />
+
+        <ImageButton
+            android:id="@+id/next_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/nextbutton_red" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

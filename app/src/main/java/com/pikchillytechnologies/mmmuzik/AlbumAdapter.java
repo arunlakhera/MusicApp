@@ -17,18 +17,22 @@ public class AlbumAdapter extends BaseAdapter {
         this.albums = albums;
         inflter = (LayoutInflater.from(applicationContext));
     }
+
     @Override
     public int getCount() {
         return albums.length;
     }
+
     @Override
     public Object getItem(int i) {
         return null;
     }
+
     @Override
     public long getItemId(int i) {
         return 0;
     }
+
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.music_gridview, null); // inflate the layout

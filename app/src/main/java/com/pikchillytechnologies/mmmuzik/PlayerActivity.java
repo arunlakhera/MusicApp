@@ -37,10 +37,10 @@ public class PlayerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent backIntent = new Intent(PlayerActivity.this, MusicActivity.class);
-                backIntent.putExtra("genre","true");
-                backIntent.putExtra("album","true");
-                backIntent.putExtra("artist","true");
-                backIntent.putExtra("tracks","true");
+                backIntent.putExtra("genre", "true");
+                backIntent.putExtra("album", "true");
+                backIntent.putExtra("artist", "true");
+                backIntent.putExtra("tracks", "true");
                 startActivity(backIntent);
             }
         });

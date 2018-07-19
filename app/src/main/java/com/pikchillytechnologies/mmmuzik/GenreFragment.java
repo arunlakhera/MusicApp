@@ -14,7 +14,7 @@ public class GenreFragment extends Fragment {
     GridView simpleGrid;
     int genre[] = {R.drawable.img1, R.drawable.img2, R.drawable.img3};
 
-    public GenreFragment(){
+    public GenreFragment() {
         // Required empty public constructor
     }
 

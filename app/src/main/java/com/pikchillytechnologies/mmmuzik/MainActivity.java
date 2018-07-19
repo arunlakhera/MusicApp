@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         textView_GenreAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent genreAllIntent = new Intent(MainActivity.this,MusicActivity.class);
-                genreAllIntent.putExtra("genre","true");
-                genreAllIntent.putExtra("album","false");
-                genreAllIntent.putExtra("artist","false");
-                genreAllIntent.putExtra("tracks","false");
+                Intent genreAllIntent = new Intent(MainActivity.this, MusicActivity.class);
+                genreAllIntent.putExtra("genre", "true");
+                genreAllIntent.putExtra("album", "false");
+                genreAllIntent.putExtra("artist", "false");
+                genreAllIntent.putExtra("tracks", "false");
                 startActivity(genreAllIntent);
             }
         });
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         textView_AlbumsAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent genreAllIntent = new Intent(MainActivity.this,MusicActivity.class);
-                genreAllIntent.putExtra("genre","false");
-                genreAllIntent.putExtra("album","true");
-                genreAllIntent.putExtra("artist","false");
-                genreAllIntent.putExtra("tracks","false");
+                Intent genreAllIntent = new Intent(MainActivity.this, MusicActivity.class);
+                genreAllIntent.putExtra("genre", "false");
+                genreAllIntent.putExtra("album", "true");
+                genreAllIntent.putExtra("artist", "false");
+                genreAllIntent.putExtra("tracks", "false");
                 startActivity(genreAllIntent);
             }
         });
@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
         textView_ArtistsAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent genreAllIntent = new Intent(MainActivity.this,MusicActivity.class);
-                genreAllIntent.putExtra("genre","false");
-                genreAllIntent.putExtra("album","false");
-                genreAllIntent.putExtra("artist","true");
-                genreAllIntent.putExtra("tracks","false");
+                Intent genreAllIntent = new Intent(MainActivity.this, MusicActivity.class);
+                genreAllIntent.putExtra("genre", "false");
+                genreAllIntent.putExtra("album", "false");
+                genreAllIntent.putExtra("artist", "true");
+                genreAllIntent.putExtra("tracks", "false");
                 startActivity(genreAllIntent);
             }
         });
@@ -62,11 +62,11 @@ public class MainActivity extends AppCompatActivity {
         textView_TracksAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent genreAllIntent = new Intent(MainActivity.this,MusicActivity.class);
-                genreAllIntent.putExtra("genre","false");
-                genreAllIntent.putExtra("album","false");
-                genreAllIntent.putExtra("artist","false");
-                genreAllIntent.putExtra("tracks","true");
+                Intent genreAllIntent = new Intent(MainActivity.this, MusicActivity.class);
+                genreAllIntent.putExtra("genre", "false");
+                genreAllIntent.putExtra("album", "false");
+                genreAllIntent.putExtra("artist", "false");
+                genreAllIntent.putExtra("tracks", "true");
                 startActivity(genreAllIntent);
             }
         });

@@ -18,22 +18,26 @@ public class GenreAdapter extends BaseAdapter {
         this.genre = genre;
         inflter = (LayoutInflater.from(applicationContext));
     }
+
     @Override
     public int getCount() {
         return genre.length;
     }
+
     @Override
     public Object getItem(int i) {
         return null;
     }
+
     @Override
     public long getItemId(int i) {
         return 0;
     }
+
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.music_gridview, null); // inflate the layout
-        ImageView icon =  view.findViewById(R.id.iconAlbum); // get the reference of ImageView
+        ImageView icon = view.findViewById(R.id.iconAlbum); // get the reference of ImageView
         icon.setImageResource(genre[i]); // set logo images
         return view;
     }

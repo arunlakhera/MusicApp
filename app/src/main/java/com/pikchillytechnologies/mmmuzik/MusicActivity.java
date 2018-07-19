@@ -36,10 +36,10 @@ public class MusicActivity extends AppCompatActivity {
 
         tabBundle = getIntent().getExtras();
 
-        genreFlag = Boolean.valueOf(tabBundle.getString("genre","false"));
-        albumFlag = Boolean.valueOf(tabBundle.getString("album","false"));
-        artistFlag = Boolean.valueOf(tabBundle.getString("artist","false"));
-        tracksFlag = Boolean.valueOf(tabBundle.getString("tracks","false"));
+        genreFlag = Boolean.valueOf(tabBundle.getString("genre", "false"));
+        albumFlag = Boolean.valueOf(tabBundle.getString("album", "false"));
+        artistFlag = Boolean.valueOf(tabBundle.getString("artist", "false"));
+        tracksFlag = Boolean.valueOf(tabBundle.getString("tracks", "false"));
 
         // get the reference of FrameLayout and TabLayout
         simpleFrameLayout = findViewById(R.id.musicFrameLayout);
@@ -67,20 +67,20 @@ public class MusicActivity extends AppCompatActivity {
         tabLayout.addTab(TracksTab); // add  the tab at in the TabLayout
 
         // Check which Tab was selected and highlight it
-        if(genreFlag){
+        if (genreFlag) {
             tabPosition = 0;
             openTab(tabPosition);
             genreTab.select();
 
-        }else if(albumFlag){
+        } else if (albumFlag) {
             tabPosition = 1;
             openTab(tabPosition);
             albumTab.select();
-        }else if(artistFlag){
+        } else if (artistFlag) {
             tabPosition = 2;
             openTab(tabPosition);
             artistTab.select();
-        }else if(tracksFlag){
+        } else if (tracksFlag) {
             tabPosition = 3;
             openTab(tabPosition);
             TracksTab.select();
@@ -115,7 +115,7 @@ public class MusicActivity extends AppCompatActivity {
 
     }
 
-    public void openTab(Integer tabPosition){
+    public void openTab(Integer tabPosition) {
 
         // get the current selected tab's position and replace the fragment accordingly
         Fragment fragment = null;
